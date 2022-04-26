@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Logo from "./assets/image/logo.png";
+import Program from "./assets/program.json";
+import LogoPage from "./components/LogoPage";
+import Content from "./components/Content";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LogoPage logo={Logo} name="M6"></LogoPage>
+      {Program.map((item) => {
+        return <Content item={item} key={item.title}></Content>;
+      })}
     </div>
   );
 }
