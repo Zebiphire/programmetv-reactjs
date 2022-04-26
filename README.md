@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Preview
+
+This is a example from the code: https://programme-tv-reactjs.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
